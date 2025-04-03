@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "autotrader-scraper"
+version = "0.1.0"
+description = ""
+authors = ["Your Name"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "*"
+requests = "*"
+curl-cffi = "*"
+scraperapi-sdk = "*"  
+# Add anything else you use
+python-dotenv = "^1.1.0"
+
+[tool.poetry.scripts]
+run-autotrader = "scripts.run:main"  
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
